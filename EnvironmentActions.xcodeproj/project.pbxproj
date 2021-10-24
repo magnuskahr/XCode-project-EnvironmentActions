@@ -8,17 +8,31 @@
 
 /* Begin PBXBuildFile section */
 		4CCDF61A27255CA0007CC93D /* EnvironmentActionsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCDF61927255CA0007CC93D /* EnvironmentActionsApp.swift */; };
-		4CCDF61C27255CA0007CC93D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCDF61B27255CA0007CC93D /* ContentView.swift */; };
 		4CCDF61E27255CA1007CC93D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CCDF61D27255CA1007CC93D /* Assets.xcassets */; };
 		4CCDF62127255CA1007CC93D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CCDF62027255CA1007CC93D /* Preview Assets.xcassets */; };
+		4CCDF62827255CB6007CC93D /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCDF62727255CB6007CC93D /* Note.swift */; };
+		4CCDF62A27255CD2007CC93D /* EditableNoteData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCDF62927255CD2007CC93D /* EditableNoteData.swift */; };
+		4CCDF62C27255CE0007CC93D /* NotesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCDF62B27255CE0007CC93D /* NotesList.swift */; };
+		4CCDF62E27255D01007CC93D /* NewNoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCDF62D27255D01007CC93D /* NewNoteView.swift */; };
+		4CCDF63027255D36007CC93D /* NotesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCDF62F27255D36007CC93D /* NotesManager.swift */; };
+		4CCDF63227255E41007CC93D /* CreateNoteAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCDF63127255E41007CC93D /* CreateNoteAction.swift */; };
+		4CCDF63427255EE9007CC93D /* EditNoteAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCDF63327255EE9007CC93D /* EditNoteAction.swift */; };
+		4CCDF63627256132007CC93D /* EditNoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCDF63527256132007CC93D /* EditNoteView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4CCDF61627255CA0007CC93D /* EnvironmentActions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EnvironmentActions.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CCDF61927255CA0007CC93D /* EnvironmentActionsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentActionsApp.swift; sourceTree = "<group>"; };
-		4CCDF61B27255CA0007CC93D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4CCDF61D27255CA1007CC93D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4CCDF62027255CA1007CC93D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4CCDF62727255CB6007CC93D /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		4CCDF62927255CD2007CC93D /* EditableNoteData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditableNoteData.swift; sourceTree = "<group>"; };
+		4CCDF62B27255CE0007CC93D /* NotesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesList.swift; sourceTree = "<group>"; };
+		4CCDF62D27255D01007CC93D /* NewNoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewNoteView.swift; sourceTree = "<group>"; };
+		4CCDF62F27255D36007CC93D /* NotesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesManager.swift; sourceTree = "<group>"; };
+		4CCDF63127255E41007CC93D /* CreateNoteAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNoteAction.swift; sourceTree = "<group>"; };
+		4CCDF63327255EE9007CC93D /* EditNoteAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditNoteAction.swift; sourceTree = "<group>"; };
+		4CCDF63527256132007CC93D /* EditNoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditNoteView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +66,14 @@
 			isa = PBXGroup;
 			children = (
 				4CCDF61927255CA0007CC93D /* EnvironmentActionsApp.swift */,
-				4CCDF61B27255CA0007CC93D /* ContentView.swift */,
+				4CCDF62F27255D36007CC93D /* NotesManager.swift */,
+				4CCDF62727255CB6007CC93D /* Note.swift */,
+				4CCDF62B27255CE0007CC93D /* NotesList.swift */,
+				4CCDF62D27255D01007CC93D /* NewNoteView.swift */,
+				4CCDF62927255CD2007CC93D /* EditableNoteData.swift */,
+				4CCDF63527256132007CC93D /* EditNoteView.swift */,
+				4CCDF63327255EE9007CC93D /* EditNoteAction.swift */,
+				4CCDF63127255E41007CC93D /* CreateNoteAction.swift */,
 				4CCDF61D27255CA1007CC93D /* Assets.xcassets */,
 				4CCDF61F27255CA1007CC93D /* Preview Content */,
 			);
@@ -137,8 +158,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4CCDF61C27255CA0007CC93D /* ContentView.swift in Sources */,
+				4CCDF63427255EE9007CC93D /* EditNoteAction.swift in Sources */,
+				4CCDF63627256132007CC93D /* EditNoteView.swift in Sources */,
+				4CCDF63227255E41007CC93D /* CreateNoteAction.swift in Sources */,
+				4CCDF62E27255D01007CC93D /* NewNoteView.swift in Sources */,
+				4CCDF63027255D36007CC93D /* NotesManager.swift in Sources */,
 				4CCDF61A27255CA0007CC93D /* EnvironmentActionsApp.swift in Sources */,
+				4CCDF62C27255CE0007CC93D /* NotesList.swift in Sources */,
+				4CCDF62827255CB6007CC93D /* Note.swift in Sources */,
+				4CCDF62A27255CD2007CC93D /* EditableNoteData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,7 +304,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -305,7 +333,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
