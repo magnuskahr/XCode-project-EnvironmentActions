@@ -7,8 +7,17 @@
 
 import SwiftUI
 
-typealias EditNoteHandler = (inout EditableNoteData) -> ()
-typealias EditNoteAction = (Note, EditNoteHandler) -> ()
+struct EditNoteAction {
+    typealias Editor = (inout EditableNoteData) -> ()
+    typealias Action = (Note, Editor) -> ()
+
+    let action: Action
+
+    func callAsFunction(_ note: Note, editor: Editor) {
+        action(note, editor)
+    }
+}
+
 typealias OnNoteEditHandler = (_ note: Note, _ editable: EditableNoteData) -> Void
 
 struct EditNoteActionKey: EnvironmentKey {
@@ -24,7 +33,7 @@ extension EnvironmentValues {
 
 extension View {
     func onEditNote(_ handler: @escaping OnNoteEditHandler) -> some View {
-        let action: EditNoteAction = { note, editAction in
+        let action: EditNoteAction = .init { note, editAction in
             var editable = EditableNoteData(title: note.title, description: note.description)
             editAction(&editable)
             handler(note, editable)
